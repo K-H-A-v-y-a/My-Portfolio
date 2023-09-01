@@ -1,0 +1,29 @@
+body {
+    background-image: url('../images/background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* html {
+    background-color: #000000; 
+} */
+
+.navbar-header{
+    padding: 20px;
+}
+.nav{
+    padding-right: 10%;
+    padding-top: 20px;
+    font-size: 19px;
+}
+
+.name-intro{
+    color: #FFFFFF;
+    font-family: 'League Spartan', sans-serif;
+}
+.name-intro h1{
+    font-size: 96px;
+}
+.name-intro p{
+    font-size: 32px;
+}
