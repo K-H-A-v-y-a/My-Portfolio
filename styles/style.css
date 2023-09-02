@@ -34,7 +34,7 @@ body {
   
 #lander{
     padding-top: 10%;
-    padding-left: 50px;
+    padding-left: 5%;
     margin-bottom: 20%;
 }
 
@@ -58,9 +58,26 @@ body {
     background-color: #C6D284; /* Change background color on hover */
 }
 
-#about-me-image p{
+.container.body-container {
+    margin: 0px;
+    margin-left: 50px;
+}
+
+.container.body-container h3 {
     font-size: 20px;
+}
+
+#about-me-image p{
+    padding-top: 5%;
+    font-size: 21px;
     color: whitesmoke;
+    font-family: 'League Spartan', sans-serif;;
+} 
+.custom-h1{
+    color: #d2e94f;
+}
+#my-works{
+    margin-top: 15%;
 }
 
 @media screen and (max-width: 768px) {
@@ -73,9 +90,9 @@ body {
     }
 
     #lander {
-        padding-top: 30%;
+        padding-top: 10%;
         padding-left: 50px;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
 
     .about-me {
@@ -94,6 +111,17 @@ body {
     
         background: #d2e94f;
         border-radius: 15px;
+    }
+    #about-me-image{
+        padding-top: 15%;
+        padding-left: 50px;
+    }
+    #about-me-image img{
+        height: 80%;
+        width: 80%;
+    }
+    #about-me-image p{
+        font-size: 15px;
     }
 }
 
