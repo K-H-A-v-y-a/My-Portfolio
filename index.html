@@ -1,46 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>My Portfolio</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <title>My Protfolio</title>
     <link rel="stylesheet" href="styles/style.css">
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=League+Spartan&display=swap">
-    
-  </head>
-  <body>
-    <nav class="navbar navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <img src="images/KS.png" alt="Logo">
-            </div>
-            <ul class = "nav navbar-nav navbar-right">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-    <div class="container">
-            <div class="col-md-6">
-                <div class = "name-intro" >
-                    <h1>Kavya S</h1>
-                    <p>Software Developer | UI/UX Designer</p>
-                </div>
-            </div>
-            <div class="col-md-6">
-                <!-- Content in the right column -->
-                <p>This is content in the right column.</p>
-            </div>
+</head>
+<body>
+
+<nav class="navbar navbar-default "> <!--navbar-fixed-top -->
+  <div class="container-fluid">
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./index.html"><img src="images/KS.png" alt="Logo"></a>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+  </div>
+</nav>
+
+<section id="lander">
+  <div class="col-xs-12 col-sm-6">
+    <div class="name-intro">
+      <h1>Kavya S</h1>
+      <p>Software Developer | UI/UX Designer</p>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  </body>
+    <button class="about-me">
+      About Me
+    </button>
+  </div>
+</section>
+
+<section id="about-me-image">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <p>
+          Hi there!! I'm a developer | designer, who is ambitious and excited to work on new projects and 
+          other challenging opportunities. Experienced in building websites and ML/DL models. 
+        </p>
+        
+        <p>
+          I strive to provide the best user experience possible in every product I develop/design. Cheers! 🍻
+        </p>
+        <p>What am I exploring now?
+          Data Analytics and visualization</p>
+      </div>
+      <div class="col">
+        <img src="images/about me - Photo.png" alt="my image">
+      </div>
+      <div class="w-100"></div>
+      <div class="col">Column</div>
+      <div class="col">Column</div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <p>
+          Hi there!! I'm a developer | designer, who is ambitious and excited to work on new projects and 
+          other challenging opportunities. Experienced in building websites and ML/DL models. 
+        </p>
+        
+        <p>
+          I strive to provide the best user experience possible in every product I develop/design. Cheers! 🍻
+        </p>
+        <p>What am I exploring now?
+          Data Analytics and visualization</p>
+      </div>
+      <div class="col">
+        <img src="images/about me - Photo.png" alt="my image">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Add the rest of your content here -->
+
+</body>
 </html>
-
-

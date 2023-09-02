@@ -1,29 +1,103 @@
 body {
-    background-image: url('../images/background.png');
+    /* background-image: url('../images/background.png');
     background-repeat: no-repeat;
-    background-size: cover;
-}
+    background-size: cover;*/
+    background-color: #000000;
+} 
 
-/* html {
-    background-color: #000000; 
-} */
-
+.navbar {
+    background-color: transparent; /* Set the background color to transparent */
+    border: none; /* Remove any border */
+  }
 .navbar-header{
     padding: 20px;
+    padding-left: 50px;
 }
 .nav{
     padding-right: 10%;
     padding-top: 20px;
-    font-size: 19px;
+    font-size: 22px;
 }
 
-.name-intro{
+.name-intro {
     color: #FFFFFF;
     font-family: 'League Spartan', sans-serif;
 }
-.name-intro h1{
+  
+.name-intro h1 {
     font-size: 96px;
 }
-.name-intro p{
+  
+.name-intro p {
     font-size: 32px;
 }
+  
+#lander{
+    padding-top: 10%;
+    padding-left: 50px;
+    margin-bottom: 20%;
+}
+
+.about-me{
+     position: absolute;
+     width: 168px;
+     height: 50px;
+     
+     font-family: 'League Spartan', sans-serif;
+     font-style: normal;
+     font-weight: 200;
+     font-size: 20px;
+     line-height: 37px;
+     
+     color: #000000;
+
+    background: #d2e94f;
+    border-radius: 15px;
+}
+.about-me:hover {
+    background-color: #C6D284; /* Change background color on hover */
+}
+
+#about-me-image p{
+    font-size: 20px;
+    color: whitesmoke;
+}
+
+@media screen and (max-width: 768px) {
+    .name-intro h1 {
+      font-size: 55px;
+    }
+  
+    .name-intro p {
+      font-size: 15px;
+    }
+
+    #lander {
+        padding-top: 30%;
+        padding-left: 50px;
+        margin-bottom: 10px;
+    }
+
+    .about-me {
+        position: absolute;
+        width: auto; /* Allow the width to adjust based on content */
+        max-width: 80%; /* Limit the width on smaller screens */
+        height: 50px;
+    
+        font-family: 'League Spartan', sans-serif;
+        font-style: normal;
+        font-weight: 200;
+        font-size: 16px; /* Adjust font size as needed for responsiveness */
+        line-height: 37px;
+    
+        color: #000000;
+    
+        background: #d2e94f;
+        border-radius: 15px;
+    }
+}
+
+
+
+
+
