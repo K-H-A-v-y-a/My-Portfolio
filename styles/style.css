@@ -69,26 +69,11 @@ body {
     color: whitesmoke;
     font-family: 'League Spartan', sans-serif;;
 } 
+
 .custom-h1{
+    font-size: 30px;
     color: #d2e94f;
-    font-size: 40px;
 }
-#my-works{
-    margin-top: 15%;
-}
-
-.card{
-    /* position: absolute; */
-    width: 472px;
-    height: 602px;
-    left: 160px;
-    top: 1863px;
-
-    background: #FFFFFF;
-    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 40px;
-}
-
 @media screen and (max-width: 768px) {
     .name-intro h1 {
       font-size: 55px;
@@ -134,7 +119,127 @@ body {
     }
 }
 
+.container .custom-h1 {
+    text-align: center;
+    padding-top: 20%;
+  }
+
+  .card-container {
+    perspective: 1000px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .card {
+    width: 400px;
+    height: 500px;
+    margin: 10px;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+  }
+
+  .card:hover {
+    transform: rotateY(180deg);
+  }
+
+  .card .card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    /* border: 2px solid #333; */
+  }
+
+  .card .front {
+    transform: rotateY(0deg);
+    color: #282d0e;
+    font-family: 'League Spartan', sans-serif;
+    font-size: 20px;
+    background-color: #ffffff;
+    text-align: center;
+    /* padding-top: 5px; */
+  }
+
+  .card .back {
+    transform: rotateY(180deg);
+  }
+
+  .card img {
+    max-width: 100%;
+    max-height: 100%;
+    border-bottom: 2px solid #333;
+  }
+
+  .card button {
+    margin-top: 8px;
+    padding: 8px 16px;
+    background-color: #d2e94f;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 15px;
+  }
+
+  @media (max-width: 768px) {
+    .card-container {
+      flex-direction: column;
+      height: auto;
+    }
+
+    .card {
+      margin: 10px 0;
+    }
+  }
+
+  #footer .row .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #footer .row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px; /* Adjust as needed for spacing between icons and text */
+  }
+
+  .col-lg-3 {
+    flex: 0 0 auto;
+    width: 25%;
+    padding: 10px;
+  }
 
 
-
-
+  #footer {
+    margin-top: 5%;
+    padding: 3% 2%;
+    background-color: #ffffff;
+    /* text-align: center; */
+  }
+  #footer p {
+    color: #000000;
+    /* margin: 5px 0; */
+  }
+ 
+ .footer-img{
+    width: 40px; 
+  }
+ 
+  .copyright {
+    font-size: 0.95rem;
+    padding-top: 30px;
+    margin-bottom: 0;
+    text-align: center;
+  }
